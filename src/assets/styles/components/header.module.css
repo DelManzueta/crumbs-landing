@@ -6,7 +6,6 @@
 	transition: ease-in-out 0.5s;
 	padding-top: 200px;
 	height: 75vh;
-	border: 2px dotted red;
 }
 
 
@@ -18,7 +17,6 @@
 	font-family: var(--ff-display);
 	color: var(--white);
 	font-size: 6.75rem;
-	border: 2px dotted white;
 	width: 60vw;
 }
  
@@ -90,12 +88,7 @@
 .connectBtn:hover {
 	background-color: white;
 	color: var(--pink);
-}
-
-img.image {
-	background-color: black;
-}
-
+} 
 
 @media (min-width: 921px) and (max-width: 1200px) {
 	.headerRow {

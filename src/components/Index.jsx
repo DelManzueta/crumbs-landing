@@ -3,11 +3,9 @@ import React, { useEffect, useState } from 'react';
 import Contact from './Contact';
 import Footer from './Footer';
 import Header from './Header';
-import Info from './Info';
 import SocialIcons from './SocialIcons';
 import Product from './Product';
 
-import contactStyles from '../assets/styles/pages/contact.module.css';
 import indexStyles from '../assets/styles/pages/index.module.css';
 import { motion } from 'framer-motion';
 import { useScroll } from 'framer-motion';

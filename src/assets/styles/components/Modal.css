@@ -8,75 +8,82 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-  }
-  
-  .AgeVerificationModal__inner {
+	z-index: 999999;
+}
+
+.AgeVerificationModal__inner {
 	width: 300px;
 	padding: 20px;
-	background-color: #fff;
+	background-color: var(--red);
 	border-radius: 10px;
 	text-align: center;
 	font-family: var(--ff-sans);
-	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
-  }
-  
-  .AgeVerificationModal__inner h2 {
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4),
+		-5px -5px 10px rgba(255, 255, 255, 0.1);
+}
+
+.AgeVerificationModal__inner h2 {
 	font-size: 2rem;
-	font-weight: 800;
+	font-weight: 500;
 	margin-bottom: 20px;
-  }
-  
-  .AgeVerificationModal__inner p {
-	font-size: 1.4rem;
+	color: var(--black);
+}
+
+.AgeVerificationModal__inner p {
+	font-size: 0.95rem;
+	text-transform: uppercase;
 	margin-bottom: 30px;
-  }
-  
-  .AgeVerificationModal__inner form {
+	color: var(--pink);
+}
+
+.AgeVerificationModal__inner form {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-  }
-  
-  .AgeVerificationModal__inner label {
+}
+
+.AgeVerificationModal__inner label {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
 	margin-bottom: 20px;
-  }
-  
-  .AgeVerificationModal__inner input[type='text'] {
+	color: #ffffff;
+}
+
+.AgeVerificationModal__inner input[type='text'] {
 	font-size: 1.4rem;
 	padding: 10px;
 	border-radius: 5px;
 	border: none;
-	box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
-	background-color: #f2f2f2;
-  }
-  
-  .AgeVerificationModal__inner button[type='submit'] {
+	background-color: #2c2c2c;
+	box-shadow: inset 3px 3px 5px rgba(0, 0, 0, 0.9),
+		inset -3px -3px 5px rgba(255, 255, 255, 0.05);
+	color: #ffffff;
+}
+
+.AgeVerificationModal__inner button[type='submit'] {
 	margin-top: 20px;
 	padding: 10px 20px;
 	border-radius: 5px;
 	border: none;
-	background-color: #48A9A6;
-	color: #fff;
+	background-color: var(--white);
+	color: var(--red-dark);
 	font-size: 1.4rem;
 	font-weight: 600;
 	cursor: pointer;
 	transition: background-color 0.3s ease;
-  }
-  
-  .AgeVerificationModal__inner button[type='submit']:hover {
+}
+
+.AgeVerificationModal__inner button[type='submit']:hover {
 	background-color: #3dd4d9;
-  }
-  
-  @media (min-width: 768px) {
+}
+
+@media (min-width: 768px) {
 	.AgeVerificationModal__inner {
-	  width: 500px;
+		width: 500px;
 	}
-  
+
 	.AgeVerificationModal__inner input[type='text'] {
-	  width: 100%;
+		width: 100%;
 	}
-  }
-  
+}
