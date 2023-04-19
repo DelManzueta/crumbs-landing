@@ -216,7 +216,10 @@ const Header = () => {
 					>
 						The
 					</motion.h3>
-					<div className={headerStyles.headerSpan}>
+					<div
+						className={headerStyles.headerSpan}
+						id='home'
+					>
 						<motion.h3
 							variants={item2}
 							style={{ y: y3 }}
@@ -276,6 +279,7 @@ const Header = () => {
 					variants={item}
 				>
 					<motion.img
+						id='home'
 						className={headerStyles.image}
 						src={bag}
 						alt='THCrumbs RSO Infused Gummies'
