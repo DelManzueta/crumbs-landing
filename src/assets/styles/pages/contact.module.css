@@ -1,0 +1,79 @@
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  background-color: var(--black);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto; /* Fixed typo */
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+
+.formGroup label {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: var(--white); /* Changed color to white */
+}
+
+.formInput {
+  background-color: transparent; /* Changed background color to transparent */
+  border: 1px solid var(--white); /* Changed border size and color */
+  border-radius: 4px;
+  color: var(--white); /* Changed text color to white */
+  font-size: 1rem;
+  font-family: var(--ff-sans);
+  padding: 0.75rem 1rem;
+  width: 100%;
+  transition: border-color 0.3s, color 0.3s; /* Updated transition properties */
+}
+
+.formInput:focus {
+  border-color: var(--pink); /* Changed focus border color to pink */
+  color: var(--pink); /* Changed focus text color to pink */
+  outline: none;
+}
+
+.formInput::placeholder {
+  color: var(--white);
+  opacity: 0.6;
+}
+
+textarea.formInput {
+  resize: none;
+  min-height: 120px;
+}
+
+.formButton {
+  background-color: var(--pink); /* Changed button background color to pink */
+  border: none;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  font-family: var(--ff-sans);
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.formButton:hover {
+  background-color: white;
+  color: var(--pink); /* Changed button hover color */
+}
+
+@media (max-width: 920px) {
+  .formInput {
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+}

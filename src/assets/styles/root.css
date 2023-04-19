@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900');
+
+@font-face {
+	font-family: 'Bondrians';
+	src: url('../styles/fonts/Bondrians.ttf');
+}
+
+:root {
+	/* Theme colors */
+	--red-prm: #b51919;
+	--prm-comp: #19b5b5;
+	--prm-an2: #b51977;
+	--prm-neu1: #1c1c1c;
+	--prm-neu2: #f0f0f0;
+
+	--red: #b03131;
+	--red-dark: #940416;
+	--red-light: #cc8585;
+	--pink: #d37a84;
+	/* End Theme colors */
+ 
+
+	--black: #141414;
+	--white: #eaeaea;
+	--gray: #c7c4bb;
+	--yellow: #ffc53b;
+	--blue: #3167d4;
+	--blue-opt: #2e5eaa;
+	--blue-accent: #3dd4d9;
+	--green: #3aa660;
+	--green-dark: #31543d;
+	--cyan: #119da4;
+
+	/* --ff-serif: 'Playfair Display', serif; */
+	--ff-serif: 'Cardo', serif;
+	/* --ff-sans:  'Inter', sans-serif; */
+	--ff-sans: 'Poppins', sans-serif;
+	/* --ff-sans: 'Bowlby One SC', cursive; */
+	--ff-display: 'Bondrians';
+}

@@ -1,0 +1,109 @@
+.cubeContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin: 0 auto;
+	flex-wrap: wrap;
+	min-height: 100vh;
+	border: 2px dotted red;
+}
+
+.cube {
+	height: 100%;
+	position: absolute;
+	transform-style: preserve-3d;
+	transition: transform 1s;
+	width: 100%;
+}
+
+.cube_face {
+	height: 100%;
+	opacity: 0.7;
+	position: absolute;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.cube_front {
+	transform: translateZ(50%);
+}
+
+.cube_back {
+	transform: rotateY(180deg) translateZ(50%);
+}
+
+.cube_right {
+	transform: rotateY(90deg) translateZ(50%);
+}
+
+.cube_left {
+	transform: rotateY(-90deg) translateZ(50%);
+}
+
+.cube_top {
+	transform: rotateX(-90deg) translateZ(50%);
+}
+
+.cube_bottom {
+	transform: rotateX(90deg) translateZ(50%);
+}
+
+.cube_copy {
+	transform: translateZ(-50%);
+}
+
+.cube:hover .cube_front {
+	transform: translateZ(35%) rotateX(-90deg);
+}
+
+.cube:hover .cube_back {
+	transform: rotateY(180deg) translateZ(35%) rotateX(-90deg);
+}
+
+.cube:hover .cube_right {
+	transform: rotateY(90deg) translateZ(35%) rotateX(-90deg);
+}
+
+.cube:hover .cube_left {
+	transform: rotateY(-90deg) translateZ(35%) rotateX(-90deg);
+}
+
+.cube:hover .cube_top {
+	transform: rotateX(-90deg) translateZ(35%) rotateX(-90deg);
+}
+
+.cube:hover .cube_bottom {
+	transform: rotateX(90deg) translateZ(35%) rotateX(-90deg);
+}
+
+.cube.clicked .cube_front {
+	transform: translateZ(-35%) rotateX(90deg);
+}
+
+.cube.clicked .cube_back {
+	transform: rotateY(180deg) translateZ(-35%) rotateX(90deg);
+}
+
+.cube.clicked .cube_right {
+	transform: rotateY(90deg) translateZ(-35%) rotateX(90deg);
+}
+
+.cube.clicked .cube_left {
+	transform: rotateY(-90deg) translateZ(-35%) rotateX(90deg);
+}
+
+.cube.clicked .cube_top {
+	transform: rotateX(-90deg) translateZ(-35%) rotateX(90deg);
+}
+
+.cube.clicked .cube_bottom {
+	transform: rotateX(90deg) translateZ(-35%) rotateX(90deg);
+}
+
+.cube.face {
+	background-repeat: no-repeat;
+	background-size: contain;
+	position: absolute;
+}

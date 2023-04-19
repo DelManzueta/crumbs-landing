@@ -1,0 +1,64 @@
+/* Styles for the product description section */
+
+.infoContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row-reverse;
+	padding: 2vh; 
+	z-index: -5;
+}
+
+.infoContainer img {
+	width: 400px;
+	margin-bottom: 50px;
+	transition: transform 0.2s ease-in-out;
+}
+
+.infoContainer img:hover {
+	transform: scale(1.05);
+}
+
+.infoContainer h2 {
+	font-size: 36px;
+	margin-bottom: 15px;
+	color: var(--red-dark); /* Use the carmine color defined in the global styles */
+}
+
+.infoContainer ul {
+	list-style: none;
+	margin-bottom: 15px;
+	text-align: justify;
+	padding: 15px 0; /* Top and bottom padding */
+}
+
+.infoContainer li {
+	margin-bottom: 20px;
+	font-size: 18px;
+	padding: 15px 0; /* Top and bottom padding */
+}
+
+/* Styles for the "Place Order" button */
+
+.orderButton {
+	background-color: var(--red-dark); /* Use the carmine color defined in the global styles */
+	border: none;
+	color: var(--white); /* Use the white color defined in the global styles */
+	padding: 12px 15px;
+	border-radius: 4px;
+	font-size: 20px;
+	cursor: pointer;
+	transition: background-color 0.2s ease-in-out;
+}
+
+.orderButton:hover {
+	background-color: var(--red-mute); /* Use the old-rose color defined in the global styles */
+}
+
+/* Styles for the text container */
+
+.infoText {
+	z-index: 9999; /* Make sure the text container appears above the image */
+	border: 2px solid white;
+	max-width: 50%;
+}

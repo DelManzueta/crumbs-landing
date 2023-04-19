@@ -1,0 +1,52 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 6rem;
+  margin-bottom: 3rem;
+  padding-top: 10vh;
+  gap: 3rem;
+}
+
+.icons {
+  display: flex;
+  gap: 2.5rem;
+}
+
+.icon {
+  color: white;
+  font-size: 2rem;
+  transition: color 0.2s ease-in-out;
+}
+
+.icon:hover {
+  color: #00c7b7;
+}
+
+.square {
+  width: 2rem;
+  height: 2rem;
+  background-color: white;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.square:hover {
+  background-color: #00c7b7;
+}
+
+.email {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: white;
+  text-align: right;
+}
+
+.email a {
+  color: white;
+  transition: color 0.2s ease-in-out;
+}
+
+.email a:hover {
+  color: #00c7b7;
+}

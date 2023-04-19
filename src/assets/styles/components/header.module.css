@@ -1,0 +1,133 @@
+.headerContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	transition: ease-in-out 0.5s;
+	padding: 20vh 0;
+}
+
+.headerRow {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	font-family: var(--ff-display);
+	color: var(--white);
+	text-transform: uppercase;
+	font-size: 6.625rem;
+	font-weight: 600;
+	letter-spacing: -0.05rem;
+}
+
+.headerLeft {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	text-align: center;
+	flex-wrap: wrap;
+}
+
+.headerRight {
+	width: 100%;
+}
+
+.headerSpan {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	gap: 1.75rem;
+}
+
+.emailInput {
+	display: inline-block;
+	background-color: transparent;
+	border: 1px solid var(--red);
+	border-radius: 4px;
+	color: var(--white);
+	font-size: 1rem;
+	font-family: var(--ff-sans);
+	padding: 0.75rem 1rem;
+	margin-right: 1rem;
+	outline: none;
+	width: 100%;
+	width: 500px;
+	transition: border-color 0.3s, color 0.3s;
+}
+
+.emailInput:focus {
+	border-color: var(--pink);
+	color: var(--pink);
+}
+
+.emailInput::placeholder {
+	color: var(--white);
+	opacity: 0.6;
+}
+.ctaContainer {
+	display: flex;
+}
+
+.connectBtn {
+	background-color: var(--white);
+	border: none;
+	border-radius: 4px;
+	color: var(--red);
+	padding: 0.5rem 1rem;
+	font-family: var(--ff-sans);
+	text-transform: uppercase;
+	font-size: 1.25rem;
+	font-weight: 600;
+	cursor: pointer;
+	transition: background-color 0.3s, color 0.3s;
+}
+
+.connectBtn:hover {
+	background-color: white;
+	color: var(--pink);
+}
+
+@media (min-width: 921px) and (max-width: 1200px) {
+	.headerRow {
+		min-width: 100vw;
+	}
+}
+
+@media (max-width: 920px) {
+	.emailInput {
+		margin-bottom: 1rem;
+		margin-right: 0;
+		width: 100%;
+	}
+	.headerRow {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		margin: 0 auto;
+		gap: 2.5rem;
+		font-size: 5rem;
+	}
+	.headerLeft {
+		width: 100vw;
+		align-items: center;
+		z-index: 1;
+	}
+	.headerRight {
+		width: 85%;
+	}
+
+	.ctaContainer {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: 0 auto;
+	}
+
+	.headerRight .image {
+		display: block;
+		margin-bottom: -55px; /* Adjust this value to eliminate the gray bar */
+	}
+}

@@ -1,0 +1,6 @@
+@import './pages/index.module.css';
+@import './pages/info.module.css';
+@import './components/cube.module.css';
+@import './components/header.module.css';
+@import './components/ageModal.css';
+@import './components/navbar.module.css';
