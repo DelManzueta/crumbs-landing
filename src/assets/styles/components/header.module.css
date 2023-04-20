@@ -99,6 +99,7 @@
 	.headerContainer {
 		min-height: 100vh;
 		padding-top: 30vh;
+		overflow: hidden;
 	}
 	.emailInput {
 		margin: 0 auto;

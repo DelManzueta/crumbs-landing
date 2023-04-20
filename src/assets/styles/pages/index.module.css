@@ -1,5 +1,11 @@
 /* Modules */
 
+/* Variables */
+:root {
+	--black: #000;
+	--red: #f00;
+}
+
 .indexContainer {
 	background: calc(100vw * 100%);
 	background-color: var(--black);
@@ -76,4 +82,37 @@
 
 .contactForm button:hover {
 	background-color: pink;
+}
+
+/* Media Queries for Responsive Design */
+@media screen and (max-width: 1200px) {
+	/* Styles for larger devices such as laptops and desktops */
+}
+
+@media screen and (max-width: 992px) {
+	/* Styles for medium devices such as tablets */
+}
+
+@media screen and (max-width: 768px) {
+	/* Styles for small devices such as mobile phones */
+
+	.infoContainer img {
+		max-width: 80%;
+	}
+
+	.contactForm {
+		max-width: 90%;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	/* Styles for extra small devices */
+
+	.infoContainer img {
+		max-width: 70%;
+	}
+
+	.contactForm {
+		max-width: 100%;
+	}
 }
