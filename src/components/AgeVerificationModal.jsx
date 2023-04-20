@@ -48,8 +48,8 @@ const AgeVerificationModal = ({ onVerified }) => {
 				alt='THCrumbs RSO Infused Gummies'
 			/>
 			<motion.div
-				initial={{ y: '-1000vh' }}
-				animate={{ y: 0 }}
+				initial={{ y: '-75vh' }}
+				animate={{ y: 10 }}
 				className='AgeVerificationModal__inner'
 				transition={{ type: 'spring', duration: 1.5 }}
 			>
