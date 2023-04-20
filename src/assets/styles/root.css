@@ -36,10 +36,12 @@
 	--green-dark: #31543d;
 	--cyan: #119da4;
 
-	/* --ff-serif: 'Playfair Display', serif; */
-	--ff-serif: 'Cardo', serif;
-	/* --ff-sans:  'Inter', sans-serif; */
-	--ff-sans: 'Poppins', sans-serif;
-	/* --ff-sans: 'Bowlby One SC', cursive; */
-	--ff-display: 'Bondrians';
+	--ff-serif-play: 'Playfair Display', serif;
+	--ff-serif-cardo: 'Cardo', serif;
+
+	--ff-sans-poppins: 'Poppins', sans-serif;
+	--ff-sans-mont: 'Montserrat', sans-serif;
+	--ff-sans-inter:  'Inter', sans-serif;
+	--ff-sans-cursive: 'Bowlby One SC', cursive;
+	--ff-sans-display: 'Bondrians';
 }

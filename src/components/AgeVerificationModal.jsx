@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import '../assets/styles/components/Modal.css';
+import logo from '../assets/img/logo.png';
 
 const AgeVerificationModal = ({ onVerified }) => {
 	const [isModalOpen, setIsModalOpen] = useState(true);
@@ -40,6 +41,12 @@ const AgeVerificationModal = ({ onVerified }) => {
 			className='AgeVerificationModal'
 			transition={{ duration: 2.5 }}
 		>
+			<motion.img
+				id='home'
+				className='Modal__logo'
+				src={logo}
+				alt='THCrumbs RSO Infused Gummies'
+			/>
 			<motion.div
 				initial={{ y: '-1000vh' }}
 				animate={{ y: 0 }}
@@ -47,7 +54,6 @@ const AgeVerificationModal = ({ onVerified }) => {
 				transition={{ type: 'spring', duration: 1.5 }}
 			>
 				<h2>Age Verification Required</h2>
-				<p>You must be 21 years or older to view this content.</p>
 				<form onSubmit={handleVerification}>
 					<label htmlFor='dob'>
 						Year of Birth (YYYY)
@@ -60,6 +66,8 @@ const AgeVerificationModal = ({ onVerified }) => {
 							required
 						/>
 					</label>
+					<p>You must be 21 years or older to view this content.</p>
+
 					<button type='submit'>Verify</button>
 				</form>
 			</motion.div>
