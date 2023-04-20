@@ -4,22 +4,22 @@
 	align-items: center;
 	justify-content: center;
 	transition: ease-in-out 0.5s;
-	padding-top: 200px;
 	height: 75vh;
 }
-
 
 .headerRow {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	margin: 0 auto;
-	font-family: var(--ff-display);
+	font-family: var(--ff-sans-display);
+	text-transform: uppercase;
 	color: var(--white);
 	font-size: 6.75rem;
 	width: 60vw;
+	padding-top: 25vh;
 }
- 
+
 .headerLeft {
 	width: 60vw;
 	display: flex;
@@ -35,6 +35,7 @@
 }
 
 .headerSpan {
+	font-weight: 700;
 	display: flex;
 	flex-wrap: nowrap;
 	justify-content: center;
@@ -47,20 +48,18 @@
 	background-color: transparent;
 	border: 1px solid var(--red);
 	border-radius: 4px;
-	color: var(--white);
+	color: var(--red);
 	font-size: 1rem;
-	font-family: var(--ff-sans);
+	font-family: var(--ff-sans-inter);
 	padding: 0.75rem 1rem;
 	margin-right: 1rem;
 	outline: none;
-	width: 100%;
-	width: 500px;
 	transition: border-color 0.3s, color 0.3s;
 }
 
 .emailInput:focus {
 	border-color: var(--pink);
-	color: var(--pink);
+	color: var(--white);
 }
 
 .emailInput::placeholder {
@@ -69,26 +68,26 @@
 }
 .ctaContainer {
 	display: flex;
+	flex-direction: row;
+	width: 100%;
 }
 
 .connectBtn {
-	background-color: var(--white);
-	border: none;
+	border: 1px solid var(--white);
 	border-radius: 4px;
-	color: var(--red);
+	color: var(--white);
 	padding: 0.5rem 1rem;
-	font-family: var(--ff-sans);
-	text-transform: uppercase;
-	font-size: 1.25rem;
-	font-weight: 600;
+	font-family: var(--ff-sans-inter);
+	font-size: 1.125rem;
+	font-weight: 400;
 	cursor: pointer;
 	transition: background-color 0.3s, color 0.3s;
 }
 
 .connectBtn:hover {
 	background-color: white;
-	color: var(--pink);
-} 
+	color: var(--black);
+}
 
 @media (min-width: 921px) and (max-width: 1200px) {
 	.headerRow {
@@ -97,10 +96,16 @@
 }
 
 @media (max-width: 920px) {
+	.headerContainer {
+		min-height: 100vh;
+		padding-top: 30vh;
+	}
 	.emailInput {
-		margin-bottom: 1rem;
-		margin-right: 0;
-		width: 100%;
+		margin: 0 auto;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		width: calc(100vw - 25vw);
 	}
 	.headerRow {
 		display: flex;
@@ -108,16 +113,17 @@
 		align-items: center;
 		justify-content: center;
 		margin: 0 auto;
-		gap: 2.5rem;
 		font-size: 5rem;
+		height: 100vh;
 	}
 	.headerLeft {
-		width: 100vw;
+		min-width: 100vw;
 		align-items: center;
 		z-index: 1;
+		gap: 0.125rem;
 	}
 	.headerRight {
-		width: 85%;
+		min-width: 100vw;
 	}
 
 	.ctaContainer {
@@ -126,9 +132,12 @@
 		justify-content: center;
 		margin: 0 auto;
 	}
-
+	.connectBtn {
+		padding: 0.625rem 1rem;
+		margin: 0 auto;
+	}
 	.headerRight .image {
 		display: block;
-		margin-bottom: -55px; /* Adjust this value to eliminate the gray bar */
+		margin-bottom: 5vh; /* Adjust this value to eliminate the gray bar */
 	}
 }

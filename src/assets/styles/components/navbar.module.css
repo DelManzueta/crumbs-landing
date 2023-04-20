@@ -55,11 +55,13 @@
 
 @media (max-width: 991px) {
 	.navBar {
-		padding: 15px 20px;
+		display: flex;
+		flex-direction: column;
+		margin-top: 20px;
 	}
-
 	.logo img {
 		height: 35px;
+		margin: 0 auto;
 	}
 
 	.navbarMenu {
@@ -74,7 +76,7 @@
 
 	.logo img {
 		height: 30px;
-		margin: 0 auto; 
+		margin: 0 auto;
 	}
 }
 

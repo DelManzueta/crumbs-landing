@@ -56,10 +56,11 @@ const AgeVerificationModal = ({ onVerified }) => {
 				<h2>Age Verification Required</h2>
 				<form onSubmit={handleVerification}>
 					<label htmlFor='dob'>
-						Year of Birth (YYYY)
+						
 						<input
 							type='text'
 							id='dob'
+							placeholder='Year of Birth (YYYY)'
 							maxLength={4}
 							value={dob}
 							onChange={handleInputChange}
