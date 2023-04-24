@@ -8,7 +8,7 @@ function Product() {
 	};
 
 	return (
-		<div className='section-fluid-main'>
+		<div className='section-fluid-main' id='info'>
 			<div className='section'>
 				<div className='info-wrap mob-margin'>
 					<p className='title-up'>THCrumbs</p>

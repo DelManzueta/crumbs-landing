@@ -1,11 +1,3 @@
-/* Modules */
-
-/* Variables */
-:root {
-	--black: #000;
-	--red: #f00;
-}
-
 .indexContainer {
 	background: calc(100vw * 100%);
 	background-color: var(--black);

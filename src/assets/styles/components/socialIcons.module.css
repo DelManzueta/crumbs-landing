@@ -1,12 +1,3 @@
-.header {
-	color: var(--red);
-	font-family: var(--ff-sans);
-	font-size: 1.25rem;
-	font-weight: 400;
-	letter-spacing: normal;
-	color: var(--pink);
-}
-
 .container {
 	display: flex;
 	flex-direction: column;
@@ -16,8 +7,16 @@
 	padding: 20vh 0;
 	max-width: 1200px;
 	width: 90%;
+	background-color: transparent;
 }
-
+.header {
+	color: var(--red);
+	font-family: var(--ff-sans);
+	font-size: 1.25rem;
+	font-weight: 400;
+	letter-spacing: normal;
+	color: var(--pink);
+}
 .icons {
 	display: flex;
 	flex-wrap: wrap;
@@ -33,7 +32,7 @@
 }
 
 .icon:hover {
-	color: var(--pink); /* You can customize this hover color */
+	color: var(--pink);
 }
 
 @media (max-width: 768px) {

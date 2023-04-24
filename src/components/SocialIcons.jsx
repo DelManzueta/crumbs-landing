@@ -11,7 +11,7 @@ import socialIconsStyles from '../assets/styles/components/socialIcons.module.cs
 const SocialIcons = () => {
 	return (
 		<div className={socialIconsStyles.container}>
-			<span className={socialIconsStyles.header}>Connect With Us Today</span>
+			<span className={socialIconsStyles.header} id='social'>Connect With Us Today</span>
 			<div className={socialIconsStyles.icons}>
 				<a
 					href='https://t.me/your_telegram_channel'

@@ -4,7 +4,8 @@
 	align-items: center;
 	justify-content: center;
 	transition: ease-in-out 0.5s;
-	height: 75vh;
+	min-height: 75vh;
+	background-color: transparent;
 }
 
 .headerRow {

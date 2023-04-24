@@ -21,18 +21,7 @@ const Navbar = () => {
 				</Link>
 			</div>
 			<ul className={navbarStyles.navbarMenu}>
-				<li className={navbarStyles.navbarItem}>
-					<Link
-						activeClass={navbarStyles.active}
-						to='home'
-						spy={true}
-						smooth={true}
-						offset={-70}
-						duration={500}
-					>
-						Home
-					</Link>
-				</li>
+				 
 				<li className={navbarStyles.navbarItem}>
 					<Link
 						activeClass={navbarStyles.active}
@@ -42,13 +31,25 @@ const Navbar = () => {
 						offset={-70}
 						duration={500}
 					>
-						Info
+						THCrumbs
 					</Link>
 				</li>
 				<li className={navbarStyles.navbarItem}>
 					<Link
 						activeClass={navbarStyles.active}
-						to='contact-form'
+						to='social'
+						spy={true}
+						smooth={true}
+						offset={-70}
+						duration={500}
+					>
+						Connect
+					</Link>
+				</li>
+				<li className={navbarStyles.navbarItem}>
+					<Link
+						activeClass={navbarStyles.active}
+						to='contact'
 						spy={true}
 						smooth={true}
 						offset={-70}
