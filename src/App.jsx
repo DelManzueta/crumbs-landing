@@ -8,7 +8,7 @@ import AgeVerificationModal from './components/AgeVerificationModal';
 import Loading from './components/Loading';
 
 function App() {
-	const [isAgeVerified, setIsAgeVerified] = useState(true);
+	const [isAgeVerified, setIsAgeVerified] = useState(false);
 	const [isLoading, setIsLoading] = useState(false);
 
 	const handleAgeVerification = (isVerified) => {
