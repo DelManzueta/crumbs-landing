@@ -73,6 +73,39 @@
 	width: 100%;
 }
 
+.callNowBtn {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 2;
+	height: 48px;
+	border-radius: 4px;
+	width: 210px;
+	letter-spacing: 1px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	border: none;
+	cursor: pointer;
+	overflow: hidden;
+	background-color: var(--red); /* updated */
+	color: var(--white); /* added */
+	box-shadow: 0 6px 15px 0 rgba(16, 39, 112, 0.15);
+	transition: all 250ms linear;
+	text-decoration: none;
+	margin: 25px auto;
+}
+
+.callNowBtn:hover {
+	background-color: var(--red-dk);
+}
+
+.phoneIcon {
+	color: #fff;
+	font-size: 1.5rem;
+	margin-right: 0.5rem;
+  }
+
 .connectBtn {
 	border: 1px solid var(--white);
 	border-radius: 4px;

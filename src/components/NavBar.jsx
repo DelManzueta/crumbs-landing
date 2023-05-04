@@ -4,6 +4,10 @@ import navbarStyles from '../assets/styles/components/navbar.module.css';
 import logo from '../assets/img/logo.png';
 
 const Navbar = () => {
+	const handleCallNowClick = () => {
+		window.open('tel:929-996-8863', '_self');
+	};
+
 	return (
 		<nav className={navbarStyles.navBar}>
 			<div className={navbarStyles.logo}>
@@ -21,7 +25,6 @@ const Navbar = () => {
 				</Link>
 			</div>
 			<ul className={navbarStyles.navbarMenu}>
-				 
 				<li className={navbarStyles.navbarItem}>
 					<Link
 						activeClass={navbarStyles.active}
@@ -58,7 +61,14 @@ const Navbar = () => {
 						Contact
 					</Link>
 				</li>
-				 
+				<li className={navbarStyles.navbarItem}>
+					<button
+						onClick={handleCallNowClick}
+						className={navbarStyles.callNowButton}
+					>
+						Call Us Now
+					</button>
+				</li>
 			</ul>
 		</nav>
 	);

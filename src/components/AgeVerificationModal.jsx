@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
+import Button from './Button';
 import '../assets/styles/components/Modal.css';
 import logo from '../assets/img/logo.png';
 
@@ -69,7 +70,7 @@ const AgeVerificationModal = ({ onVerified }) => {
 					</label>
 					<p>You must be 21 years or older to view this content.</p>
 
-					<button type='submit'>Verify</button>
+					<Button text='Verify' onClick={handleVerification} />
 				</form>
 			</motion.div>
 		</motion.div>

@@ -3,6 +3,8 @@ import * as React from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { useEffect, useState } from 'react';
 
+import { FaPhone } from 'react-icons/fa'; // Import the phone icon
+
 import bag from '../assets/img/bag-shade.png';
 import headerStyles from '../assets/styles/components/header.module.css';
 
@@ -168,6 +170,10 @@ const Header = () => {
 		}
 	};
 
+	const handleCallNowClick = () => {
+		window.open(`tel:929-996-8863`, '_self');
+	};
+
 	useEffect(() => {
 		const handleComplete = () => {
 			setAnimationComplete(true);
@@ -236,7 +242,7 @@ const Header = () => {
 					</div>
 					<motion.h3
 						className={headerStyles.staple}
-						variants={item3}
+						variants={item}
 						style={{ y: y5 }}
 					>
 						Standard
@@ -244,34 +250,21 @@ const Header = () => {
 					{/* Copy Ends */}
 
 					{/* Button */}
-					<motion.div
-						className={headerStyles.ctaContainer}
-						variants={exitVariants}
-						initial='visible'
-						animate='visible'
-						style={{
-							y: y3,
-						}}
+					<motion.button
+						className={headerStyles.callNowBtn}
+						type='button'
+						initial={{ opacity: 0 }}
+						animate={{ opacity: 1 }}
+						transition={{ duration: 0.5, delay: 1.5 }}
+						onClick={handleCallNowClick}
+						style={{ y: y4 }} // Add this line to match the bag scroll animation
 					>
-						<form onSubmit={handleEmailFormSubmit}>
-							<input
-								className={headerStyles.emailInput}
-								type='email'
-								name='email'
-								placeholder='Enter your email for updates'
-								required
-							/>
-							<motion.button
-								className={headerStyles.connectBtn}
-								type='submit'
-								initial={{ opacity: 0 }}
-								animate={{ opacity: 1 }}
-								transition={{ duration: 0.5, delay: 1.5 }}
-							>
-								Sign Up
-							</motion.button>
-						</form>
-					</motion.div>
+						<FaPhone className={headerStyles.phoneIcon} />
+						<span className={headerStyles.callNowText}>
+							CALL US NOW
+						</span>
+					</motion.button>
+
 					{/* Button Ends */}
 				</motion.div>
 				<motion.div
