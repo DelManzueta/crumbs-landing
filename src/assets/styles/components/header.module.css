@@ -175,4 +175,7 @@
 		display: block;
 		margin-bottom: 5vh; /* Adjust this value to eliminate the gray bar */
 	}
+	.callNowBtn{
+		display: none;
+	}
 }
