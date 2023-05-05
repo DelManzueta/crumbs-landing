@@ -15,8 +15,8 @@ jobs:
     name: check readiness
     runs-on: ubuntu-latest
     outputs:
-  deployment-enabled: ${{ fromJSON(steps.project.outputs.info).deployment-enabled }}
-  branch-id: ${{ fromJSON(steps.project.outputs.info).branch-id }}
+      deployment-enabled: ${{ fromJson(steps.project.outputs.info).deployment-enabled }}
+      branch-id: ${{ fromJson(steps.project.outputs.info).branch-id }}
     steps:
       - name: Fetch project data
         uses: ionos-deploy-now/project-action@v1
@@ -24,7 +24,7 @@ jobs:
         with:
           api-key: ${{ secrets.IONOS_API_KEY }}
           service-host: api-us.ionos.space
-          project-id: ba5a8699-bc83-404a-8b5a-3f7c24351f0b
+          project-id: 82b6e0c1-d6c8-4adc-beb8-f7e3f8b7eba3
           action: retrieve-info
 
 
@@ -50,6 +50,6 @@ jobs:
         with:
           api-key: ${{ secrets.IONOS_API_KEY }}
           service-host: api-us.ionos.space
-          project-id: ba5a8699-bc83-404a-8b5a-3f7c24351f0b
+          project-id: 82b6e0c1-d6c8-4adc-beb8-f7e3f8b7eba3
           branch-id: ${{ needs.retrieve-project.outputs.branch-id }}
           action: dispatch-deployments
