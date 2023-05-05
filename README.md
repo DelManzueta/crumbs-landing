@@ -31,5 +31,3 @@ Expandability
 
 THCrumbs was built with expansion in mind. The folder structure and component architecture make it easy to add new features and functionality to the application. In addition, the use of modern web development technologies makes it easy to keep the application up-to-date and maintainable in the long term.
 
-
-##Steph6893
